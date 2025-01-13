@@ -2,13 +2,14 @@ interface Author {
   name: string ,
   genre: string;
 }
+
 interface Post {
   id: number;
   name: string;
   volume: number;
   price: number;
   image: string;
-  date: string;
+  date: Date;
   author: Author;
 }
 
@@ -18,7 +19,7 @@ const newPost: Post = {
   volume: 123,
   price: 1000,
   image: "assets/image25.jpg",
-  date: "5/11/12",
+  date: new Date(),
   author:{name:'ruby', genre:'middle-east'}
 };
 
